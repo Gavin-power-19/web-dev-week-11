@@ -48,29 +48,40 @@ nav a {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
-}
-/* Button styling */
-button {
+
+/* Button and link styling */
+button,
+.button,
+main a {
     background-color: #165dcb;
     color: white;
-    border: none;
     padding: 12px 20px;
+    border: none;
     border-radius: 6px;
-    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
 }
 
-/* Button hover effect */
-button:hover {
+/* Hover effect */
+button:hover,
+.button:hover,
+main a:hover {
     background-color: #0b132b;
+    color: white;
     transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-/* Button click effect */
-button:active {
+/* Click effect */
+button:active,
+.button:active,
+main a:active {
     transform: scale(0.98);
 }
+
 
 
