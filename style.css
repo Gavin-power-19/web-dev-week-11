@@ -82,6 +82,176 @@ button:active,
 main a:active {
     transform: scale(0.98);
 }
+    
+/* =================================
+   UNIQUE WHEELS ON FIRE DESIGN
+================================= */
+
+/* Smooth scrolling and page background */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #eef4fb, #dce8f8);
+}
+
+/* Premium header */
+header {
+    background: linear-gradient(135deg, #070b18, #142b52, #07111f);
+    color: white;
+    padding: 45px 20px;
+    border-bottom: 4px solid #3a86ff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    color: white;
+    font-size: clamp(28px, 5vw, 46px);
+    letter-spacing: 2px;
+    text-shadow: 0 0 18px rgba(58, 134, 255, 0.6);
+}
+
+header p {
+    color: #cbdcff;
+}
+
+/* Modern navigation */
+nav {
+    background: #0b132b;
+    position: relative;
+    z-index: 1;
+}
+
+nav a {
+    position: relative;
+    transition: color 0.3s ease,
+                background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #165dcb;
+    transform: translateY(-3px);
+}
+
+/* Main content card */
+main {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #d7e4f5;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(11, 19, 43, 0.10);
+    animation: fadeUp 0.7s ease both;
+}
+
+/* Gradient headings */
+main h1,
+main h2 {
+    color: #165dcb;
+}
+
+main h2 {
+    border-bottom: 2px solid #3a86ff;
+    padding-bottom: 8px;
+}
+
+/* Paragraph readability */
+main p {
+    line-height: 1.8;
+}
+
+/* Car images */
+main img,
+.car-card img {
+    border-radius: 12px;
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease;
+}
+
+main img:hover,
+.car-card img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(22, 93, 203, 0.2);
+}
+
+/* Stylish car cards */
+.car-card {
+    border: 1px solid #e0e9f5;
+    border-top: 4px solid #165dcb;
+    border-radius: 14px;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 28px rgba(22, 93, 203, 0.18);
+}
+
+/* Gradient buttons */
+button,
+.button,
+.car-card a {
+    background: linear-gradient(135deg, #2878ed, #1249a8);
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(22, 93, 203, 0.2);
+    transition: background 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+button:hover,
+.button:hover,
+.car-card a:hover {
+    background: linear-gradient(135deg, #142b52, #070b18);
+    color: white;
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(22, 93, 203, 0.3);
+}
+
+/* Normal content links */
+main p a {
+    color: #165dcb;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+main p a:hover {
+    color: #e63946;
+}
+
+/* Premium footer */
+footer {
+    background: linear-gradient(135deg, #070b18, #142b52);
+    color: white;
+    border-top: 3px solid #3a86ff;
+}
+
+/* Fade-in animation */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
 
 
 
